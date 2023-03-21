@@ -1,12 +1,15 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import React from "react";
+import ReactDOM from "react-dom";
+import './App.css';
+import Header from "./components/Header"
 
 function App() {
 
   return (
-    <h1 className="text-3xl font-bold underline bg-red-500">
-      Hello world!
-    </h1>
+    <div>
+      <Header />
+    </div>
   )
 }
 
