@@ -1,6 +1,4 @@
-import React from "react";
-import ReactDOM from "react-dom";
-function Header() {
+export default function IndexPage(){
     return (
         <header className=' p-4 flex  justify-between'>
             {/* Logo anf Brand Name */}
@@ -26,6 +24,7 @@ function Header() {
                     </svg>
                 </button>
             </div>
+            
             {/* Account Widget */}
             <div className="flex border border-gray-300 rounded-full py-2 px-4 gap-2 shadow-md shadow-gray-300 items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -35,13 +34,10 @@ function Header() {
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 relative -bottom-1">
                         <path fillRule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clipRule="evenodd" />
                     </svg>
-
-
                 </div>
-
             </div>
         </header>
 
     );
+
 }
-export default Header;

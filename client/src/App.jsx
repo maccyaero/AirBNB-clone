@@ -1,15 +1,17 @@
 import { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import React from "react";
 import ReactDOM from "react-dom";
 import './App.css';
-import Header from "./components/Header"
+import IndexPage from './pages/IndexPage';
 
 function App() {
 
   return (
-    <div>
-      <Header />
-    </div>
+    <Routes>
+      <Route index element={<IndexPage />} />
+    </Routes>
+
   )
 }
 
